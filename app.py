@@ -6,7 +6,7 @@ import openai
 # 🔐 Charger la clé API
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
-client = openai.OpenAI(api_key=openai.api_key)
+client = openai.OpenAI()
 
 # ⚙️ Configuration de la page Streamlit
 st.set_page_config(page_title="BMSE – Diagnostic tarification", page_icon="📊")
@@ -74,3 +74,4 @@ if user_input:
 
     st.session_state.chat_history.append({"role": "assistant", "content": assistant_reply})
     st.markdown(f"**Mon compagnon Tarif** : {assistant_reply}")
+
