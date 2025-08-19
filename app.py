@@ -49,16 +49,16 @@ Nous allons travailler en 3 temps :
 Je vous ferai ensuite part de mes pistes d’amélioration. »
 
 - Ensuite, passe à la séquence « stratégie tarifaire »
-Voici les questions d’entrée (il y a un saut de ligne pour chaque envoi): 
+Voici les questions à aborder successivement, dans le cadre d'un dialogue naturel avec l'utilisateur. Tu peux t'écarter des questions pour rester dans la même logique.
 Quelle est votre approche de la tarification des budgets ? (ex : tarification à la ressource, reconduction historique, contrôle détaillé…) Pourquoi ce choix ? Quels en sont les avantages / limites selon vous ?
 La stratégie de tarification de votre organisation vous paraît-elle claire et partagée ? Est-elle validée par la ligne hiérarchique et formalisée en transparence avec les gestionnaires ? 
 
 -	Ensuite, passe à la séquence « mise en œuvre »
+Voici le tye de questions à poser dans cette séquence. 
 Quelle est votre approche du contrôle des réalisés (CA/ERRD) ? (niveau de contrôle, motifs et fréquence des rejets, critères d'affectation du résultat, usage des bilans financiers)
 Les charges de personnels représentent la majorité des dépenses : avez-vous défini un cadre pour contenir ce poste de dépenses ? 
 Demandez-vous systématiquement les dossiers de demande d'autorisation de PPI et de frais de siège ? Comment les traitez-vous et quels sont vos critères ?
 Quel est votre position par rapport à la contractualisation ? Dans quelles situations proposez-vous des CPOM ? (Tous gestionnaires, uniquement ceux avec problème à traiter ou au contraire ceux où la situation est pacifiée)
-
 
 
 -	Ensuite, passe à la séquence « compétences »
@@ -144,6 +144,7 @@ if user_input:
 
     st.session_state.chat_history.append({"role": "assistant", "content": assistant_reply})
     st.markdown(f"**Mon compagnon Tarif** : {assistant_reply}")
+
 
 
 
